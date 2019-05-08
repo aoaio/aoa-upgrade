@@ -1,0 +1,4 @@
+# ignore IDE
+.idea/*
+contract/out/*
+tests/__pycache__/*

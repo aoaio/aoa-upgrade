@@ -1,13 +1,21 @@
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
+# file name: activate_delegate.py
 
-import utils
-import mgmt
-import logic
+"""
+activate delegate for Aurorachain accounts
+"""
+
+import os
+import sys
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from tests import *
 
 # 获取所有账号，作为测试账号
 print(u'\n\n查询accounts...')
-accounts = utils.get_accounts()
+accounts = utils.accounts()
 account0 = accounts[0]
 print(u'accounts地址: ', accounts)
 
