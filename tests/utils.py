@@ -104,7 +104,7 @@ def query_receipt(tx_hash):
 def compile_contract(filename):
     '''编译合约，返回abi和bin'''
     current_dir = os.getcwd()
-    print(current_dir)
+    # print(current_dir)
 
     while 'contract' not in os.listdir(current_dir):
         current_dir = os.path.abspath(os.path.join(current_dir, '..'))
@@ -112,7 +112,6 @@ def compile_contract(filename):
             break
 
     print(current_dir)
-
     contract_path = current_dir + "/contract"
     contract_out_dir = contract_path + "/out"
     file_path = contract_out_dir + "/" + filename.split(".")[0] + ".bin"

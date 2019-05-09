@@ -6,12 +6,7 @@
 activate delegate for Aurorachain accounts
 """
 
-import os
-import sys
-
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-from tests import *
+from tests import utils
 
 # 获取所有账号，作为测试账号
 print(u'\n\n查询accounts...')
