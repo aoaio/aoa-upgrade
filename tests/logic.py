@@ -42,7 +42,7 @@ def vote(logic_contract_address, account):
         status, receipt = utils.query_receipt(tx_hash)
         if status:
             logs = receipt['result']['logs']
-            print(logs)
+            # print(logs)
             for log in logs:
                 topics = log['topics']
                 if len(topics) >= 3:
