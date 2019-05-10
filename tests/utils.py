@@ -4,6 +4,7 @@
 
 import json
 import os
+import sys
 import platform
 import stat
 import subprocess
@@ -103,16 +104,17 @@ def query_receipt(tx_hash):
 
 def compile_contract(filename):
     '''编译合约，返回abi和bin'''
-    current_dir = os.getcwd()
+    # current_dir = os.getcwd()
     # print(current_dir)
 
-    while 'contract' not in os.listdir(current_dir):
-        current_dir = os.path.abspath(os.path.join(current_dir, '..'))
-        if len(current_dir) == 1 and current_dir == "/":
-            break
-
-    print(current_dir)
-    contract_path = current_dir + "/contract"
+    # while 'contract' not in os.listdir(current_dir):
+    #     current_dir = os.path.abspath(os.path.join(current_dir, '..'))
+    #     if len(current_dir) == 1 and current_dir == "/":
+    #         break
+    #
+    # print(current_dir)
+    # contract_path = current_dir + "/contract"
+    contract_path = sys.argv[1]
     contract_out_dir = contract_path + "/out"
     file_path = contract_out_dir + "/" + filename.split(".")[0] + ".bin"
 
