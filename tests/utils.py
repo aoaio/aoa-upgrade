@@ -5,6 +5,7 @@
 import json
 import os
 import platform
+import stat
 import subprocess
 import time
 from urllib import request
@@ -129,6 +130,10 @@ def compile_contract(filename):
         cmd = "docker run -v " + contract_path + solc_cmd + filename + out_cmd
     print(u'合约编译命令: ' + cmd)
     run_cmd(cmd)
+
+    # change contract_out_dir permission
+    os.chmod(contract_out_dir, stat.S_IRWXO | stat.S_IRWXG | stat.S_IRWXU)
+    # os.chown(contract_out_dir, os.geteuid(), os.getegid())
 
     # read ./out/*.bin file
     bin_str = ""
