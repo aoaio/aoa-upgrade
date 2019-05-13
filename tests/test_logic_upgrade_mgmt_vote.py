@@ -40,7 +40,7 @@ for i in range(len(accounts)):
 
 print(u'\n\n\n====================================测试开始====================================')
 # 发起请求
-print(u'\n\n管理合约投票未结束，设置升级合约地址未过期，发起升级请求...')
+print(u'\n\n管理合约投票未结束，也未过期，发起升级请求...')
 version = '1.1'
 url = 'test.tar.gz'
 md5 = '0ca175b9c0f7d895e2693333333333333333332461'
@@ -51,7 +51,7 @@ logic.send_upgrade_request(logic_contract_address, account0, version, url, md5, 
 
 # 发起请求
 time.sleep(1 * 60)
-print(u'\n\n管理合约投票未结束，设置升级合约地址己过期，发起升级请求...')
+print(u'\n\n管理合约投票未结束，但己过期，发起升级请求...')
 version = '1.1'
 url = 'test.tar.gz'
 md5 = '0ca175b9c0f7d895e2693333333333333333332461'

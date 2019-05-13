@@ -79,7 +79,7 @@ logic.send_upgrade_request(logic_contract_address, account0, version, url, md5, 
 
 print(u'\n\n\n====================================测试开始====================================')
 # 发起请求
-print(u'\n\n升级合约投票结束后，升级块高未到，发起升级请求...')
+print(u'\n\n升级合约投票己结束，升级块高未到，再发起升级请求...')
 version = '1.1'
 url = 'test.tar.gz'
 md5 = '0ca175b9c0f7d895e2693333333333333333332461'
@@ -90,7 +90,7 @@ logic.send_upgrade_request(logic_contract_address, account0, version, url, md5, 
 
 # 发起请求
 time.sleep(1 * 60)
-print(u'\n\n升级合约投票结束后，升级块高己到，发起升级请求...')
+print(u'\n\n升级合约投票己结束，升级块高己到，再发起升级请求...')
 version = '1.1'
 url = 'test.tar.gz'
 md5 = '0ca175b9c0f7d895e2693333333333333333332461'

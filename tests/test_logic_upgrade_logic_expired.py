@@ -46,7 +46,7 @@ logic.send_upgrade_request(logic_contract_address, account0, version, url, md5, 
 
 
 print(u'\n\n\n====================================测试开始====================================')
-print(u'\n\n升级未过期，再发起升级请求...')
+print(u'\n\n升级合约未过期，再发起升级请求...')
 version = '1.1'
 url = 'test.tar.gz'
 md5 = '0ca175b9c0f7d895e2693333333333333333332461'
@@ -54,8 +54,8 @@ note = 'upgrade to v1.1'
 logic.send_upgrade_request(logic_contract_address, account0, version, url, md5, note);
 
 #######
+print(u'\n\n升级合约己过期，再发起升级请求...')
 time.sleep(1 * 60)
-print(u'\n\n升级己过期，再发起升级请求...')
 version = '1.1'
 url = 'test.tar.gz'
 md5 = '0ca175b9c0f7d895e2693333333333333333332461'
