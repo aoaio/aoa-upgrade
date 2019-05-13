@@ -41,6 +41,6 @@ for account in accounts:
 
 print(u'\n\n\n====================================测试开始====================================')
 # 是否正在升级
-print(u'\n\n设置升级合约地址投票己结束，发起投票请求...')
+print(u'\n\n管理合约投票己结束，再发起投票请求...')
 mgmt.vote(mgmt_contract_address, account0)
 #######

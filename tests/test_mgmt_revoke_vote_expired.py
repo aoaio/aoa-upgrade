@@ -35,9 +35,9 @@ mgmt.vote(mgmt_contract_address, account0);
 #######
 
 
-time.sleep(1 * 60)
 print(u'\n\n\n====================================测试开始====================================')
 # 撤销投票
-print(u'\n\n设置升级合约地址己投票且己过期，发起撤销投票请求......')
+print(u'\n\n管理合约己过期，发起撤销投票请求...')
+time.sleep(1 * 60)
 mgmt.revoke_vote(mgmt_contract_address, account0)
 #######

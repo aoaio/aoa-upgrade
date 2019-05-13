@@ -28,12 +28,12 @@ mgmt.send_request(mgmt_contract_address, account0, new_address);
 
 print(u'\n\n\n====================================测试开始====================================')
 # 投票
-print(u'\n\n发起投票请求...')
+print(u'\n\n管理合约发起投票请求...')
 mgmt.vote(mgmt_contract_address, account0);
 #######
 
 
 # 投票
-print(u'\n\n再次发起投票请求...')
+print(u'\n\n管理合约己投票，再次发起投票请求...')
 mgmt.vote(mgmt_contract_address, account0);
 #######

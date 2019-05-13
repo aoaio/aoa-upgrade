@@ -32,15 +32,15 @@ mgmt.send_request(mgmt_contract_address, account0, new_address);
 
 
 # 设置管理中的升级合约
-print(u'\n\n设置升级合约地址未过期，发起设置升级合约地址请求...')
+print(u'\n\n管理合约未过期，发起设置升级合约地址请求...')
 new_address = logic_contract_address[3:]
 mgmt.send_request(mgmt_contract_address, account0, new_address);
 #######
 
 
 # 设置管理中的升级合约
+print(u'\n\n管理合约己过期，发起设置新升级合约地址请求...')
 time.sleep(1 * 60)
-print(u'\n\n设置升级合约地址己过期，发起设置新升级合约地址请求...')
 new_address = logic_contract_address[3:]
 mgmt.send_request(mgmt_contract_address, account0, new_address);
 #######

@@ -45,14 +45,14 @@ for account in accounts:
 
 print(u'\n\n\n====================================测试开始====================================')
 # 设置管理中的升级合约
-print(u'\n\n设置升级合约地址投票己结束，使用投票己结束的升级合约地址，发起设置升级合约地址请求...')
+print(u'\n\n管理合约投票己结束，使用旧升级合约地址，发起设置升级合约地址请求...')
 new_address = logic_contract_address[3:]
 mgmt.send_request(mgmt_contract_address, account0, new_address);
 #######
 
 
 # 设置管理中的升级合约
-print(u'\n\n设置升级合约地址投票己结束，使用新的升级合约地址，发起设置升级合约地址请求...')
+print(u'\n\n管理合约投票己结束，使用新升级合约地址，发起设置升级合约地址请求...')
 new_address = logic_contract_address_new[3:]
 mgmt.send_request(mgmt_contract_address, account0, new_address);
 #######

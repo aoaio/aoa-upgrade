@@ -27,9 +27,9 @@ mgmt.send_request(mgmt_contract_address, account0, new_address);
 #######
 
 
-time.sleep(1 * 60)
 print(u'\n\n\n====================================测试开始====================================')
 # 投票
-print(u'\n\n设置升级合约地址请求己过期，发起投票请求...')
+print(u'\n\n管理合约己过期，再发起投票请求...')
+time.sleep(1 * 60)
 mgmt.vote(mgmt_contract_address, account0);
 #######

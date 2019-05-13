@@ -30,25 +30,25 @@ mgmt.send_request(mgmt_contract_address, account0, new_address);
 
 print(u'\n\n\n====================================测试开始====================================')
 # 撤销投票
-print(u'\n\n设置升级合约地址未投票，发起撤销投票请求......')
+print(u'\n\n管理合约未投票，发起撤销投票请求......')
 mgmt.revoke_vote(mgmt_contract_address, account0)
 #######
 
 
 print(u'\n\n\n#################################投票请求不是一个测试用例#################################')
 # 投票
-print('发起投票请求...')
+print('管理合约发起投票请求...')
 mgmt.vote(mgmt_contract_address, account0);
 #######
 print('#################################投票请求不是一个测试用例#################################')
 
 # 撤销投票
-print(u'\n\n\n设置升级合约地址己投票，发起撤销投票请求...')
+print(u'\n\n\n管理合约己投票，发起撤销投票...')
 mgmt.revoke_vote(mgmt_contract_address, account0)
 #######
 
 
 # 撤销投票
-print(u'\n\n己发起撤销投票请求，再次发起撤销投票请求...')
+print(u'\n\n管理合约己撤销投票，再次发起撤销投票请求...')
 mgmt.revoke_vote(mgmt_contract_address, account0)
 #######

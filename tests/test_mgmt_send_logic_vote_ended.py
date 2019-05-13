@@ -66,15 +66,15 @@ for account in accounts:
 
 print(u'\n\n\n====================================测试开始====================================')
 # 设置管理中的升级合约
-print(u'\n\n升级合约投票己结束后，但升级合约的升级块高未到，发起设置升级合约地址请求...')
+print(u'\n\n升级合约投票己结束，升级合约的升级块高未到，发起设置升级合约地址请求...')
 new_address = logic_contract_address_new[3:]
 mgmt.send_request(mgmt_contract_address, account0, new_address);
 #######
 
 
 # 设置管理中的升级合约
+print(u'\n\n升级合约投票己结束，升级合约的升级块高己到，发起设置升级合约地址请求...')
 time.sleep(1 * 60)
-print(u'\n\n升级合约投票结束后，但升级合约的升级块高己到，发起设置升级合约地址请求...')
 new_address = logic_contract_address_new[3:]
 mgmt.send_request(mgmt_contract_address, account0, new_address);
 #######

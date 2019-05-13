@@ -57,15 +57,15 @@ logic.send_upgrade_request(logic_contract_address, account0, version, url, md5, 
 print(u'\n\n\n====================================测试开始====================================')
 
 # 设置管理中的升级合约
-print(u'\n\n升级合约的升级未过期，发起设置升级合约地址请求...')
+print(u'\n\n升级合约未过期，再次发起设置升级合约地址请求...')
 new_address = logic_contract_address_new[3:]
 mgmt.send_request(mgmt_contract_address, account0, new_address);
 #######
 
 
 # 设置管理中的升级合约
+print(u'\n\n升级合约的升级请求己过期，再次发起设置升级合约地址请求...')
 time.sleep(1 * 60)
-print(u'\n\n升级合约的升级己过期，发起设置升级合约地址请求...')
 new_address = logic_contract_address_new[3:]
 mgmt.send_request(mgmt_contract_address, account0, new_address);
 #######

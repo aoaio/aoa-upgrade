@@ -46,9 +46,9 @@ logic.send_upgrade_request(logic_contract_address, account0, version, url, md5, 
 #######
 
 
-time.sleep(1 * 60)
 print(u'\n\n\n====================================测试开始====================================')
 # 取消升级
 print(u'\n\n升级合约己过期，发起取消升级请求...')
+time.sleep(1 * 60)
 logic.cancel(logic_contract_address, account0)
 #######
