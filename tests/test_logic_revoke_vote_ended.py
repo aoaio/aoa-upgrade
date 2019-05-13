@@ -56,6 +56,6 @@ for account in accounts:
 
 print(u'\n\n\n====================================测试开始====================================')
 # 撤销投票
-print(u'\n\n投票结束后，发起撤销投票请求...')
+print(u'\n\n升级合约投票己结束，再发起撤销投票请求...')
 logic.revoke_vote(logic_contract_address, account0)
 #######

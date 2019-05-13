@@ -46,7 +46,7 @@ logic.send_upgrade_request(logic_contract_address, account0, version, url, md5, 
 
 print(u'\n\n\n====================================测试开始====================================')
 # 撤销投票
-print(u'\n\n未投票，发起撤销投票请求......')
+print(u'\n\n升级合约未投票，发起撤销投票请求......')
 logic.revoke_vote(logic_contract_address, account0)
 #######
 
@@ -59,12 +59,12 @@ logic.vote(logic_contract_address, account0);
 print('#################################投票请求不是一个测试用例#################################')
 
 # 撤销投票
-print(u'\n\n己投票，发起撤销投票请求...')
+print(u'\n\n升级合约己投票，发起撤销投票请求...')
 logic.revoke_vote(logic_contract_address, account0)
 #######
 
 
 # 撤销投票
-print(u'\n\n己撤销投票，再发起撤销投票请求...')
+print(u'\n\n升级合约己撤销投票，再发起撤销投票请求...')
 logic.revoke_vote(logic_contract_address, account0)
 #######

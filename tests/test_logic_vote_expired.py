@@ -49,6 +49,6 @@ logic.send_upgrade_request(logic_contract_address, account0, version, url, md5, 
 # 投票
 time.sleep(1 * 60)
 print(u'\n\n\n====================================测试开始====================================')
-print(u'\n\n升级请求己过期，发起投票请求...')
+print(u'\n\n升级合约己过期，发起投票请求...')
 logic.vote(logic_contract_address, account0);
 #######
